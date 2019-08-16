@@ -18,8 +18,6 @@ An application made for Epicodus C# independent project #5 that allows users to 
 
 > dotnet build
 
-> dotnet ef migrations add Initial
-
 > dotnet ef database update
 
 > dotnet run
