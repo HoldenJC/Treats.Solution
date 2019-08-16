@@ -6,7 +6,7 @@
 
 ## Description
 
-An application made for Epicodus C# independent project #5 that allows users to enter in treats and flavors and set up many to many relationships within a database between those treats and flavors.
+An application made for Epicodus C#/.NET independent project #5 that allows users to enter in treats and flavors and set up many to many relationships within a database between those treats and flavors.
 
 ## Setup/Installation Requirements
 
