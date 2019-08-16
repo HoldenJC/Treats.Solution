@@ -10,12 +10,10 @@
 <hr />
 @if (Model.Any())
 {
-    <ul>
         @foreach (var listTreat in Model)
         {
-            <li>@Html.DisplayFor(modelTreat => listTreat.Description)</li>
+            <li>@Html.ActionLink($"{listTreat.Description}", "Details", new { id = listTreat.TreatId })</li>
         }
-    </ul>
 }
 else
 {

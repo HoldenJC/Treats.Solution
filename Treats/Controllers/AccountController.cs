@@ -79,7 +79,26 @@ namespace Treats.Controllers
       }
       else
       {
-        return View();
+        return RedirectToAction("Invalid");
+      }
+    }
+
+    public ActionResult Invalid()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> Invalid(LoginViewModel model)
+    {
+      Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, isPersistent: true, lockoutOnFailure: false);
+      if (result.Succeeded)
+      {
+        return RedirectToAction("Index");
+      }
+      else
+      {
+        return RedirectToAction("Invalid");
       }
     }
 

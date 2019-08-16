@@ -46,18 +46,6 @@ namespace Treats.Controllers
       return RedirectToAction("Index");
     }
 
-    // [HttpPost]
-    // public ActionResult Create(Treat treat, int FlavorId)
-    // {
-    //   _db.Treats.Add(treat);
-    //   if (FlavorId != 0)
-    //   {
-    //     _db.FlavorTreat.Add(new FlavorTreat() { FlavorId = FlavorId, TreatId = treat.TreatId });
-    //   }
-    //   _db.SaveChanges();
-    //   return RedirectToAction("Index");
-    // }
-
     public ActionResult Details(int id)
     {
       var thisTreat = _db.Treats
