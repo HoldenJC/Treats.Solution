@@ -2,7 +2,7 @@
 
 @model IEnumerable<Treats.Models.Treat>
 
-<h2>Here is your list of tasks, @User.Identity.Name</h2>
+<h2>Here is your list of treats, @User.Identity.Name</h2>
 <hr />
 @if (Model.Any())
 {
@@ -15,7 +15,7 @@
 }
 else
 {
-    <p>No tasks have been added yet!</p>
+    <p>No treats have been added yet!</p>
 }
 
 @Html.ActionLink("Create new", "Create")
