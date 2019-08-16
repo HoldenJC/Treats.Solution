@@ -2,11 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Treats and Flavors</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="~/css/styles.css">
+    <title>Treats and Flavors List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
   </head>
-  <body>
+  <body class="body-text" background="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcf.ltkcdn.net%2Fgourmet%2Fimages%2Forig%2F208210-2125x1411-Pastry-Desserts.jpg&f=1">
+    <div class="container">
+      <div class="jumbotron rounded-0 shadow border-dark">
+        <h1 class="display-4">Treats and Flavors List</h1>
+        <p class="lead">For use by Pierre's Sweet and Savory Treats</p>
+      </div>
+      <div class="card p-2 rounded-0 shadow">
+      <div class="row">
+        <div class="col">@Html.ActionLink("Treats", "Index", "Treats")</div>
+        <div class="col">@Html.ActionLink("Home", "Index", "Home")</div>
+        <div class="col">@Html.ActionLink("Flavors", "Index", "Flavors")</div>
+      </div>
+    </div>
+    <div class="card mt-3 p-3 rounded-0 shadow">
     @RenderBody()
+    </div>
+    </div>
+    @Html.Partial("Footer")
   </body>
 </html>

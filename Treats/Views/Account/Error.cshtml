@@ -6,8 +6,9 @@
 
 @model RegisterViewModel
 
-<h1>Invalid password, please use at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character. Password must be at least 6 characters long.</h1>
+<h4><font color="red">Invalid password, please see requirments below.</font></h4>
 <h2>Register a new user</h2>
+<p>Please use at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character. Password must be at least 6 characters long.</p>
 <hr />
 @using (Html.BeginForm("Register", "Account", FormMethod.Post))
 {
